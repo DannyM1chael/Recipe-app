@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('chicken');
 
-  const curl = `https://api.edamam.com/search?q=${ query }&app_id=${APP_ID}&app_key=${APP_KEY}`;
+  const curl = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   useEffect(() => {
     getRecipes();
